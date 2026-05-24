@@ -48,4 +48,5 @@ jobs:
             -D "sonar.host.url=http://localhost:9000" `
             -D "sonar.token=${{ secrets.SONAR_TOKEN }}" `
             -D "sonar.projectKey=BlackJack" `
-            -D "sonar.sources=."
+            -D "sonar.sources=." `
+            -D "sonar.exclusions=tests/**,**/tests/**"
